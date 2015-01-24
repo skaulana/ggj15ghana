@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Layout 1</name>
-    <sid>5865167040221817</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <name>Game Screen</name>
+    <sid>6102730903587637</sid>
+    <event-sheet>Game Events</event-sheet>
     <size>
         <width>1000</width>
         <height>800</height>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="8067605772107362">
+        <layer name="Layer 0" sid="6890751238656067">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -29,11 +29,11 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Text" uid="0">
+                <instance type="MenuText" uid="5">
                     <properties>
-                        <text>Sample text</text>
+                        <text>(put game assets, logic, etc. here!) returning to menu in 3 seconds...</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
+                        <font>Arial,-32,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -44,11 +44,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>41</x>
-                        <y>37</y>
+                        <x>51</x>
+                        <y>108</y>
                         <z>0</z>
-                        <width>200</width>
-                        <height>30</height>
+                        <width>510</width>
+                        <height>111</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

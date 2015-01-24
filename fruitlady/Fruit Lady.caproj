@@ -10,6 +10,7 @@
     <unique-id>16w6dmkzza8es</unique-id>
     <saved-with-version>19500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors />
@@ -40,18 +41,25 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="Text" sid="3349437866397053">
+        <object-type name="MenuText" sid="3349437866397053">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="Keyboard" sid="7929943826469668">
+            <plugin id="Keyboard" />
         </object-type>
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
+        <layout>Main Menu.xml</layout>
+        <layout>Game Screen.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Main Menu Events.xml</event-sheet>
+        <event-sheet>Game Events.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Keyboard" uid="3" />
+    </global-instances>
     <sounds-folder />
     <music-folder />
     <files-folder>
