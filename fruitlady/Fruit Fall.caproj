@@ -69,14 +69,14 @@
                     <frame duration="1" hotspotX="0" hotspotY="-0.00769231" original-source="C:\Users\SWANZY\Desktop\ec sprites\market woman\market woman.png">
                         <image-point name="Imagepoint 1" x="0.48" y="0.161538" />
                         <collision-poly>
-                            <point x="0.455245" y="0.643952" />
-                            <point x="0.5" y="0.244355" />
-                            <point x="0.533637" y="0.659677" />
-                            <point x="0.503991" y="0.5" />
-                            <point x="0.551596" y="0.365726" />
-                            <point x="0.5" y="0.570968" />
-                            <point x="0.443843" y="0.372177" />
-                            <point x="0.482896" y="0.5" />
+                            <point x="0.331245" y="0.674721" />
+                            <point x="0.402" y="0.848201" />
+                            <point x="0.579637" y="0.850062" />
+                            <point x="0.627991" y="0.673077" />
+                            <point x="0.635596" y="0.346495" />
+                            <point x="0.716" y="0.165199" />
+                            <point x="0.251843" y="0.160638" />
+                            <point x="0.328896" y="0.338462" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -91,12 +91,16 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7488149196339744" speed="5">
-                    <frame duration="1" hotspotX="0.501618" hotspotY="0.501683" original-source="C:\Users\SWANZY\Desktop\ec sprites\fruts\sprites\bananas1png.png">
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.710438" original-source="C:\Users\SWANZY\Desktop\ec sprites\fruts\sprites\bananas1png.png">
                         <collision-poly>
-                            <point x="0.499775" y="0.454382" />
-                            <point x="0.533093" y="0.5" />
-                            <point x="0.499775" y="0.519808" />
-                            <point x="0.470059" y="0.5" />
+                            <point x="0.297735" y="0.286195" />
+                            <point x="0.368932" y="0.276094" />
+                            <point x="0.601942" y="0.363636" />
+                            <point x="0.877023" y="0.37037" />
+                            <point x="0.831715" y="0.548821" />
+                            <point x="0.66343" y="0.703704" />
+                            <point x="0.398058" y="0.700337" />
+                            <point x="0.242718" y="0.50505" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -175,6 +179,10 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="GameBackground" sid="9230316246057913">
+            <plugin id="TiledBg" />
+            <texture />
         </object-type>
     </object-folder>
     <families />

@@ -28,13 +28,13 @@
                     <conditions>
                         <condition id="-2" name="Compare Y" sid="4649513663487132" type="TestFruit">
                             <param id="0" name="Comparison">4</param>
-                            <param id="1" name="Y co-ordinate">TestFruit.Height + FruitLady.Y</param>
+                            <param id="1" name="Y co-ordinate">450</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action behavior="Physics" id="2" name="Apply force at angle" sid="2697652796070184" type="TestFruit">
-                            <param id="0" name="Force">500</param>
-                            <param id="1" name="Angle">TestFruit.X &gt; FruitLady.X ? 0 : 180</param>
+                            <param id="0" name="Force">200</param>
+                            <param id="1" name="Angle">TestFruit.X &gt; (FruitLady.X + (FruitLady.Width / 2)) ? 0 : 180</param>
                             <param id="2" name="Image point">0</param>
                         </action>
                     </actions>
