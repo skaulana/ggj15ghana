@@ -4,8 +4,8 @@
     <sid>6102730903587637</sid>
     <event-sheet>Game Events</event-sheet>
     <size>
-        <width>999</width>
-        <height>521</height>
+        <width>1000</width>
+        <height>600</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="TiledBackground2" uid="7">
+                <instance type="GameBackground" uid="8">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -40,8 +40,8 @@
                         <x>0</x>
                         <y>0</y>
                         <z>0</z>
-                        <width>999.304382324</width>
-                        <height>521.636901855</height>
+                        <width>1000</width>
+                        <height>600</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -94,14 +94,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>508.986999512</x>
-                        <y>-26.016838074</y>
+                        <x>569</x>
+                        <y>-19</y>
                         <z>0</z>
                         <width>38</width>
                         <height>38</height>
                         <depth>0</depth>
-                        <hotspotX>0.501618147</hotspotX>
-                        <hotspotY>0.501683474</hotspotY>
+                        <hotspotX>0.504854381</hotspotX>
+                        <hotspotY>0.710437715</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -180,8 +180,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>386</x>
-                        <y>392.669250488</y>
+                        <x>385</x>
+                        <y>400</y>
                         <z>0</z>
                         <width>223</width>
                         <height>232</height>
