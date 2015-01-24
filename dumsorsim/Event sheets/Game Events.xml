@@ -93,6 +93,9 @@
                                 <action id="3" name="Set progress" sid="3472707779568348" type="PowerBar">
                                     <param id="0" name="Value">PowerBar.Progress - PowerPerHouse</param>
                                 </action>
+                                <action id="5" name="Set frame" sid="5714478697102317" type="House">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="1378900971567562">
@@ -123,6 +126,9 @@
                         </action>
                         <action id="3" name="Set progress" sid="1196891608461095" type="PowerBar">
                             <param id="0" name="Value">PowerBar.Progress + PowerPerHouse</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="975645161934843" type="House">
+                            <param id="0" name="Frame number">1</param>
                         </action>
                     </actions>
                 </event-block>
