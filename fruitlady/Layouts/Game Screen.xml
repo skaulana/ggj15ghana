@@ -180,13 +180,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-<<<<<<< HEAD
-                        <x>516</x>
-                        <y>368</y>
-=======
                         <x>386</x>
                         <y>392.669250488</y>
->>>>>>> origin/master
                         <z>0</z>
                         <width>223</width>
                         <height>232</height>
