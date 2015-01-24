@@ -1,3 +1,4 @@
-# Construct 2 recommends not syncing .uistate.xml files
+# Construct 2 accessory files
 *.uistate.xml
 *.autosave
+*.backup1
