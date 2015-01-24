@@ -73,14 +73,102 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>508.986999512</x>
-                        <y>-26.016838074</y>
+                        <x>521.016113281</x>
+                        <y>-1.973064423</y>
                         <z>0</z>
-                        <width>38</width>
-                        <height>38</height>
+                        <width>48</width>
+                        <height>54</height>
                         <depth>0</depth>
                         <hotspotX>0.501618147</hotspotX>
                         <hotspotY>0.501683474</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="orange" uid="7">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>573.882324219</x>
+                        <y>34.857143402</y>
+                        <z>0</z>
+                        <width>39</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.509803951</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="pineapple" uid="8">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>663</x>
+                        <y>42</y>
+                        <z>0</z>
+                        <width>40</width>
+                        <height>37</height>
+                        <depth>0</depth>
+                        <hotspotX>0.503816783</hotspotX>
+                        <hotspotY>0.504065037</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="melons" uid="9">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>622.046020508</x>
+                        <y>87.038093567</y>
+                        <z>0</z>
+                        <width>36</width>
+                        <height>43</height>
+                        <depth>0</depth>
+                        <hotspotX>0.505747139</hotspotX>
+                        <hotspotY>0.504761934</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="mangoes" uid="10">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>557</x>
+                        <y>74</y>
+                        <z>0</z>
+                        <width>37</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

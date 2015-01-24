@@ -45,9 +45,6 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="158340705074274" type="TestFruit" />
-                        <action behavior="Bullet" id="2" name="Set gravity" sid="810506269072883" type="TestFruit2">
-                            <param id="0" name="Gravity">200</param>
-                        </action>
                     </actions>
                 </event-block>
             </sub-events>

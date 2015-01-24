@@ -66,6 +66,7 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="530724741074575" speed="5">
                     <frame duration="1" hotspotX="0" hotspotY="-0.00769231" original-source="C:\Users\SWANZY\Desktop\ec sprites\market woman\market woman.png">
+                        <image-point name="Imagepoint 1" x="0.48" y="0.161538" />
                         <collision-poly>
                             <point x="0.455245" y="0.643952" />
                             <point x="0.5" y="0.244355" />
@@ -95,6 +96,80 @@
                             <point x="0.533093" y="0.5" />
                             <point x="0.499775" y="0.519808" />
                             <point x="0.470059" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="orange" sid="229394261778649">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8658739397273421" speed="5">
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.514286" original-source="C:\Users\SWANZY\Desktop\ec sprites\fruts\sprites\orange-4png.png">
+                        <collision-poly>
+                            <point x="0.490196" y="0.0285714" />
+                            <point x="0.745098" y="0.371429" />
+                            <point x="0.72549" y="0.485714" />
+                            <point x="0.686275" y="0.542857" />
+                            <point x="0.490196" y="0.6" />
+                            <point x="0.392157" y="0.428571" />
+                            <point x="0.431373" y="0.485714" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pineapple" sid="2862082556477602">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9888310048568779" speed="5">
+                    <frame duration="1" hotspotX="0.503817" hotspotY="0.504065" original-source="C:\Users\SWANZY\Desktop\ec sprites\fruts\sprites\pineapplepng.png">
+                        <collision-poly>
+                            <point x="0.412214" y="0.439024" />
+                            <point x="0.496183" y="0.0325203" />
+                            <point x="0.709924" y="0.308943" />
+                            <point x="0.748092" y="0.495935" />
+                            <point x="0.748092" y="0.731707" />
+                            <point x="0.496183" y="0.886179" />
+                            <point x="0.366412" y="0.609756" />
+                            <point x="0.374046" y="0.495935" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="melons" sid="3132501896607769">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9819192407182607" speed="5">
+                    <frame duration="1" hotspotX="0.505747" hotspotY="0.504762" original-source="C:\Users\SWANZY\Desktop\ec sprites\fruts\sprites\ttar_watermelon_01_v_launchpng.png">
+                        <collision-poly>
+                            <point x="0.264368" y="0.219048" />
+                            <point x="0.494253" y="0.142857" />
+                            <point x="0.735632" y="0.219048" />
+                            <point x="0.850575" y="0.495238" />
+                            <point x="0.747126" y="0.790476" />
+                            <point x="0.494253" y="0.885714" />
+                            <point x="0.252874" y="0.790476" />
+                            <point x="0.149425" y="0.495238" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mangoes" sid="5446130185234979">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4505018676255164" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SWANZY\Desktop\ec sprites\fruts\sprites\yellow-mangopng.png">
+                        <collision-poly>
+                            <point x="0.370968" y="0.396552" />
+                            <point x="0.5" y="0.275862" />
+                            <point x="0.725806" y="0.293103" />
+                            <point x="0.645161" y="0.62069" />
+                            <point x="0.5" y="0.724138" />
+                            <point x="0.33871" y="0.637931" />
+                            <point x="0.33871" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
