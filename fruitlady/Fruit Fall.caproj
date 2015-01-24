@@ -78,7 +78,14 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7488149196339744" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.501618" hotspotY="0.501683" original-source="C:\Users\SWANZY\Desktop\ec sprites\fruts\sprites\bananas1png.png">
+                        <collision-poly>
+                            <point x="0.499775" y="0.454382" />
+                            <point x="0.533093" y="0.5" />
+                            <point x="0.499775" y="0.519808" />
+                            <point x="0.470059" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
