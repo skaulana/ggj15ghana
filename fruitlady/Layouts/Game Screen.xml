@@ -5,7 +5,7 @@
     <event-sheet>Game Events</event-sheet>
     <size>
         <width>1000</width>
-        <height>800</height>
+        <height>600</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -31,7 +31,7 @@
             <instances>
                 <instance type="MenuText" uid="5">
                     <properties>
-                        <text>(put game assets, logic, etc. here!) returning to menu in 3 seconds...</text>
+                        <text>Returning to menu in 10 seconds...</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-32,400,0</font>
                         <color>0,0,0</color>
@@ -52,6 +52,46 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="FruitLady" uid="4">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Movement">
+                            <properties>
+                                <max-speed>250</max-speed>
+                                <acceleration>1000</acceleration>
+                                <deceleration>5000</deceleration>
+                                <directions>Left &amp; right</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>Yes</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="BoundToLayout">
+                            <properties>
+                                <bound-by>Edge</bound-by>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>364</x>
+                        <y>647</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>150</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>-0.006666667</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
