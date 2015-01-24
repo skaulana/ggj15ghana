@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Game Events</name>
+    <events>
+        <variable constant="0" name="PowerPerHouse" sid="7011218498954764" static="0" type="number">25</variable>
+        <variable constant="0" name="DefaultTimeToRiot" sid="183505958904721" static="0" type="number">300</variable>
+        <variable constant="0" name="PlayerScore" sid="4700122631349031" static="0" type="number">0</variable>
+        <event-block sid="6172179150627585">
+            <conditions>
+                <condition id="0" name="On clicked" sid="6475284878485759" type="MenuPlayButton" />
+            </conditions>
+            <actions>
+                <action id="2" name="Set visible" sid="3526616829886762" type="MenuPlayButton">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="6815722167432175" type="System">
+                    <param id="0" name="Layout">Game Screen</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="7371765438371383" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="9791027082637819">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="8618185290544382" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="8241066774451366" type="System">
+                    <param id="0" name="Variable">PlayerScore</param>
+                    <param id="1" name="Value">1 + 2 * (PowerBar.Progress / PowerPerHouse)</param>
+                </action>
+                <action id="0" name="Set text" sid="2895922809756294" type="ScoreText">
+                    <param id="0" name="Text">&quot;Score: &quot; &amp; PlayerScore</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4764081183203751">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="4663906572878692" type="System" />
+                <condition id="-8" name="Is boolean instance variable set" sid="5215425986228078" type="House">
+                    <param id="0" name="Instance variable">IsBlackout</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="1573508652419442" type="House">
+                    <param id="0" name="Instance variable">TimeToRiot</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="4546830037253623" type="House">
+                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">100 - (House.TimeToRiot / DefaultTimeToRiot) * 100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2514997460290025">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="6209086158812969" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">House</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="199803796115262">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="9670994053696718" type="House">
+                            <param id="0" name="Instance variable">IsBlackout</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="1372349185007329">
+                            <conditions>
+                                <condition id="1" name="Compare progress" sid="487328717296232" type="PowerBar">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Value">PowerPerHouse</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-14" name="Toggle boolean" sid="7314169330171541" type="House">
+                                    <param id="0" name="Instance variable">IsBlackout</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="9605805081676804" type="House">
+                                    <param id="0" name="Mode">0</param>
+                                    <param id="1" name="Effect">&quot;Tint&quot;</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="9338361053034967" type="House">
+                                    <param id="0" name="Instance variable">TimeToRiot</param>
+                                    <param id="1" name="Value">DefaultTimeToRiot</param>
+                                </action>
+                                <action id="3" name="Set progress" sid="3472707779568348" type="PowerBar">
+                                    <param id="0" name="Value">PowerBar.Progress - PowerPerHouse</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1378900971567562">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="9361704138143966" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Flash" id="0" name="Flash" sid="7081343267354056" type="PowerBar">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="5151437327542375">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="1034217689494708" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Toggle boolean" sid="5650496308392972" type="House">
+                            <param id="0" name="Instance variable">IsBlackout</param>
+                        </action>
+                        <action id="-27" name="Set effect enabled" sid="1556783314608622" type="House">
+                            <param id="0" name="Mode">1</param>
+                            <param id="1" name="Effect">&quot;Tint&quot;</param>
+                        </action>
+                        <action id="3" name="Set progress" sid="1196891608461095" type="PowerBar">
+                            <param id="0" name="Value">PowerBar.Progress + PowerPerHouse</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="7493061698333266">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="3689880339570572" type="House">
+                    <param id="0" name="Instance variable">TimeToRiot</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="544340146432998" type="System">
+                    <param id="0" name="Layout">Menu Screen</param>
+                </action>
+                <action id="2" name="Set visible" sid="5792850381965657" type="MenuPlayButton">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="400962627060396" type="MenuPlayButton">
+                    <param id="0" name="Text">&quot;Play (last score: &quot; &amp; PlayerScore &amp; &quot;)&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
