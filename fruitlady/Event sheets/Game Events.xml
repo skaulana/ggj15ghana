@@ -9,12 +9,45 @@
             </conditions>
             <actions>
                 <action id="-16" name="Wait" sid="7839491075234854" type="System">
-                    <param id="0" name="Seconds">10</param>
+                    <param id="0" name="Seconds">5</param>
                 </action>
                 <action id="-2" name="Go to layout" sid="4725707489724976" type="System">
                     <param id="0" name="Layout">Main Menu</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="3226621946390864">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5191569958185716" type="TestFruit">
+                    <param id="0" name="Object">FruitLady</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5191348108566341">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="4649513663487132" type="TestFruit">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">TestFruit.Height + FruitLady.Y</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Physics" id="2" name="Apply force at angle" sid="2697652796070184" type="TestFruit">
+                            <param id="0" name="Force">500</param>
+                            <param id="1" name="Angle">TestFruit.X &gt; FruitLady.X ? 0 : 180</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3485601790089556">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="4812786881083381" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="158340705074274" type="TestFruit" />
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
