@@ -1,0 +1,2 @@
+# Construct 2 recommends not syncing .uistate.xml files
+*.uistate.xml
