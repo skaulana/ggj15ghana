@@ -102,7 +102,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-<<<<<<< HEAD
         <object-type name="orange" sid="229394261778649">
             <plugin id="Sprite" />
             <animation-folder>
@@ -176,15 +175,6 @@
                     </frame>
                 </animation>
             </animation-folder>
-=======
-        <object-type name="TiledBackground" sid="3035618289445912">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="TiledBackground2" sid="5044627799448967">
-            <plugin id="TiledBg" />
-            <texture original-source="C:\Users\Infinit3_dant3\Documents\GitHub\ggj15ghana\fruitlady\Untitled-2.png" />
->>>>>>> origin/master
         </object-type>
     </object-folder>
     <families />
