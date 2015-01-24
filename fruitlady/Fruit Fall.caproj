@@ -13,6 +13,7 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
@@ -101,6 +102,7 @@
                 </animation>
             </animation-folder>
         </object-type>
+<<<<<<< HEAD
         <object-type name="orange" sid="229394261778649">
             <plugin id="Sprite" />
             <animation-folder>
@@ -174,6 +176,15 @@
                     </frame>
                 </animation>
             </animation-folder>
+=======
+        <object-type name="TiledBackground" sid="3035618289445912">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground2" sid="5044627799448967">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Infinit3_dant3\Documents\GitHub\ggj15ghana\fruitlady\Untitled-2.png" />
+>>>>>>> origin/master
         </object-type>
     </object-folder>
     <families />
