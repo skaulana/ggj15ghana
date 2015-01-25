@@ -97,6 +97,9 @@
                 <behavior-type name="Bullet" sid="140414179202088">
                     <behavior id="Bullet" />
                 </behavior-type>
+                <behavior-type name="Pin" sid="5862615669175054">
+                    <behavior id="Pin" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7488149196339744" speed="5">
@@ -116,6 +119,9 @@
             <behaviors>
                 <behavior-type name="Bullet" sid="2532860294180169">
                     <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="1057944608996868">
+                    <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -139,6 +145,9 @@
             <behaviors>
                 <behavior-type name="Bullet" sid="2196491430809861">
                     <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="8378034392315394">
+                    <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -164,6 +173,9 @@
                 <behavior-type name="Bullet" sid="3986498275502557">
                     <behavior id="Bullet" />
                 </behavior-type>
+                <behavior-type name="Pin" sid="4510421955924111">
+                    <behavior id="Pin" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9819192407182607" speed="5">
@@ -187,6 +199,9 @@
             <behaviors>
                 <behavior-type name="Bullet" sid="1911554816999865">
                     <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="6504370917905602">
+                    <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
             <animation-folder>

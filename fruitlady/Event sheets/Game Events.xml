@@ -4,6 +4,7 @@
     <name>Game Events</name>
     <events>
         <variable constant="0" name="maxgametime" sid="1006662764698135" static="0" type="number">30</variable>
+        <variable constant="1" name="BASKETHEIGHT" sid="4276860445043912" static="0" type="number">627</variable>
         <variable constant="0" name="timer" sid="1239212921494726" static="0" type="number">0</variable>
         <event-block sid="5611668508548931">
             <conditions>
@@ -35,10 +36,14 @@
                 </action>
             </actions>
         </event-block>
-        <event-block any="1" sid="3417748315806827">
+        <event-block sid="3417748315806827">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="3830814190679852" type="banana">
                     <param id="0" name="Object">FruitLady</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="4081099453000757" type="banana">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Y co-ordinate">BASKETHEIGHT</param>
                 </condition>
             </conditions>
             <actions>
@@ -49,22 +54,9 @@
                 <action id="0" name="Set text" sid="9032715949095739" type="Score">
                     <param id="0" name="Text">FruitLady.Score</param>
                 </action>
-                <action id="-9" name="Destroy" sid="9961862676539974" type="banana" />
-            </actions>
-        </event-block>
-        <event-block disabled="1" sid="5228874295402868">
-            <conditions>
-                <condition disabled="1" id="-2" name="Compare Y" sid="4081099453000757" type="banana">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="Y co-ordinate">banana.Height + FruitLady.Y</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Bullet" id="4" name="Bounce off object" sid="1278405139004378" type="banana">
-                    <param id="0" name="Object">banana</param>
-                </action>
-                <action behavior="Bullet" id="2" name="Set gravity" sid="5581932541432087" type="banana">
-                    <param id="0" name="Gravity">-90</param>
+                <action behavior="Pin" id="0" name="Pin to object" sid="9961862676539974" type="banana">
+                    <param id="0" name="Pin to">FruitLady</param>
+                    <param id="1" name="Mode">0</param>
                 </action>
             </actions>
         </event-block>
@@ -72,6 +64,10 @@
             <conditions>
                 <condition id="0" name="On collision with another object" sid="7891982473611514" type="mangoes">
                     <param id="0" name="Object">FruitLady</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="1675872171195106" type="mangoes">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Y co-ordinate">BASKETHEIGHT</param>
                 </condition>
             </conditions>
             <actions>
@@ -82,13 +78,20 @@
                 <action id="0" name="Set text" sid="1385605835749835" type="Score">
                     <param id="0" name="Text">FruitLady.Score</param>
                 </action>
-                <action id="-9" name="Destroy" sid="5286981387738271" type="mangoes" />
+                <action behavior="Pin" id="0" name="Pin to object" sid="5286981387738271" type="mangoes">
+                    <param id="0" name="Pin to">FruitLady</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="3755317131866348">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="8371660655746493" type="melons">
                     <param id="0" name="Object">FruitLady</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="9162272919789748" type="melons">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Y co-ordinate">BASKETHEIGHT</param>
                 </condition>
             </conditions>
             <actions>
@@ -99,13 +102,20 @@
                 <action id="0" name="Set text" sid="7853578164323693" type="Score">
                     <param id="0" name="Text">FruitLady.Score</param>
                 </action>
-                <action id="-9" name="Destroy" sid="8450314017797048" type="melons" />
+                <action behavior="Pin" id="0" name="Pin to object" sid="8450314017797048" type="melons">
+                    <param id="0" name="Pin to">FruitLady</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="9133140420600174">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="9437997548003585" type="orange">
                     <param id="0" name="Object">FruitLady</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="72328636570161" type="orange">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Y co-ordinate">BASKETHEIGHT</param>
                 </condition>
             </conditions>
             <actions>
@@ -116,13 +126,20 @@
                 <action id="0" name="Set text" sid="7508701967239609" type="Score">
                     <param id="0" name="Text">FruitLady.Score</param>
                 </action>
-                <action id="-9" name="Destroy" sid="395546342652844" type="orange" />
+                <action behavior="Pin" id="0" name="Pin to object" sid="395546342652844" type="orange">
+                    <param id="0" name="Pin to">FruitLady</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="4857270122312998">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="1948043945742476" type="pineapple">
                     <param id="0" name="Object">FruitLady</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="8819365208120131" type="pineapple">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Y co-ordinate">BASKETHEIGHT</param>
                 </condition>
             </conditions>
             <actions>
@@ -133,7 +150,10 @@
                 <action id="0" name="Set text" sid="4291043919185389" type="Score">
                     <param id="0" name="Text">FruitLady.Score</param>
                 </action>
-                <action id="-9" name="Destroy" sid="9943333195416777" type="pineapple" />
+                <action behavior="Pin" id="0" name="Pin to object" sid="9943333195416777" type="pineapple">
+                    <param id="0" name="Pin to">FruitLady</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="1872310207238408">
