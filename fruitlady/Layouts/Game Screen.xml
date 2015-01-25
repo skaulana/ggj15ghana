@@ -117,14 +117,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>591</x>
-                        <y>584</y>
+                        <x>557</x>
+                        <y>530</y>
                         <z>0</z>
-                        <width>223</width>
-                        <height>232</height>
+                        <width>126.607711792</width>
+                        <height>274.153930664</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
-                        <hotspotY>-0.007692308</hotspotY>
+                        <hotspotY>-0.008450705</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

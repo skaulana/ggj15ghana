@@ -4,7 +4,7 @@
     <name>Game Events</name>
     <events>
         <variable constant="0" name="maxgametime" sid="1006662764698135" static="0" type="number">30</variable>
-        <variable constant="1" name="BASKETHEIGHT" sid="4276860445043912" static="0" type="number">627</variable>
+        <variable constant="1" name="BASKETHEIGHT" sid="4276860445043912" static="0" type="number">540</variable>
         <variable constant="0" name="timer" sid="1239212921494726" static="0" type="number">0</variable>
         <event-block sid="5611668508548931">
             <conditions>

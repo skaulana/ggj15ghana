@@ -75,17 +75,17 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="530724741074575" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="-0.00769231" original-source="C:\Users\SWANZY\Desktop\ec sprites\market woman\market woman.png">
-                        <image-point name="Imagepoint 1" x="0.48" y="0.161538" />
+                    <frame duration="1" hotspotX="0" hotspotY="-0.0084507" original-source="C:\Users\Sean\Desktop\market lady.png">
+                        <image-point name="Imagepoint 1" x="0.481707" y="0.160563" />
                         <collision-poly>
-                            <point x="0.246" y="0.167308" />
-                            <point x="0.718" y="0.169231" />
-                            <point x="0.628" y="0.346154" />
-                            <point x="0.634" y="0.671154" />
-                            <point x="0.617" y="0.869231" />
-                            <point x="0.354" y="0.867308" />
-                            <point x="0.336" y="0.675" />
-                            <point x="0.33" y="0.346154" />
+                            <point x="0.185024" y="0.0433644" />
+                            <point x="0.864341" y="0.0424705" />
+                            <point x="0.780439" y="0.25883" />
+                            <point x="0.719366" y="0.54721" />
+                            <point x="0.554878" y="0.967823" />
+                            <point x="0.390732" y="0.959886" />
+                            <point x="0.378683" y="0.539788" />
+                            <point x="0.226342" y="0.22221" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -105,10 +105,14 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7488149196339744" speed="5">
                     <frame duration="1" hotspotX="0.501618" hotspotY="0.501683" original-source="C:\Users\SWANZY\Desktop\ec sprites\fruts\sprites\bananas1png.png">
                         <collision-poly>
-                            <point x="0.499775" y="0.454382" />
-                            <point x="0.533093" y="0.5" />
-                            <point x="0.499775" y="0.519808" />
-                            <point x="0.470059" y="0.5" />
+                            <point x="0.313916" y="0.26936" />
+                            <point x="0.498382" y="0.329966" />
+                            <point x="0.877023" y="0.387205" />
+                            <point x="0.825243" y="0.552189" />
+                            <point x="0.634304" y="0.666667" />
+                            <point x="0.504854" y="0.713805" />
+                            <point x="0.349515" y="0.636364" />
+                            <point x="0.265372" y="0.498316" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -156,12 +160,12 @@
                         <collision-poly>
                             <point x="0.412214" y="0.439024" />
                             <point x="0.496183" y="0.0325203" />
-                            <point x="0.709924" y="0.308943" />
+                            <point x="0.687023" y="0.097561" />
                             <point x="0.748092" y="0.495935" />
                             <point x="0.748092" y="0.731707" />
-                            <point x="0.496183" y="0.886179" />
-                            <point x="0.366412" y="0.609756" />
-                            <point x="0.374046" y="0.495935" />
+                            <point x="0.648855" y="0.902439" />
+                            <point x="0.412214" y="0.861788" />
+                            <point x="0.358779" y="0.617886" />
                         </collision-poly>
                     </frame>
                 </animation>
