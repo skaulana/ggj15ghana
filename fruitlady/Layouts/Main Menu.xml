@@ -2,7 +2,7 @@
 <c2layout>
     <name>Main Menu</name>
     <sid>5865167040221817</sid>
-    <event-sheet></event-sheet>
+    <event-sheet>MainEvent</event-sheet>
     <size>
         <width>1000</width>
         <height>600</height>
@@ -29,26 +29,19 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="MenuText" uid="0">
+                <instance type="TiledBackground2" uid="19">
                     <properties>
-                        <text>The fruit lady only has one day to sell as much fruit as she can carry. Help her out, but don&apos;t try to carry too much! She has to balance it all on her head :)</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>50</x>
-                        <y>200</y>
+                        <x>0</x>
+                        <y>-1</y>
                         <z>0</z>
-                        <width>410</width>
-                        <height>70</height>
+                        <width>1000</width>
+                        <height>600</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -56,58 +49,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="MenuText" uid="1">
+                <instance type="Button" uid="0">
                     <properties>
-                        <text>Fruit Fall</text>
+                        <type>Button</type>
+                        <text>PLAY</text>
+                        <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-48,400,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
+                        <enabled>Yes</enabled>
+                        <auto-font-size>Yes</auto-font-size>
+                        <id-optional></id-optional>
+                        <checked>No</checked>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>50</x>
-                        <y>100</y>
+                        <x>383</x>
+                        <y>72</y>
                         <z>0</z>
-                        <width>500</width>
-                        <height>70</height>
+                        <width>253</width>
+                        <height>77</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="MenuText" uid="2">
-                    <properties>
-                        <text>Press spacebar to start (use arrow keys to play)</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-24,400,1</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>50</x>
-                        <y>300</y>
-                        <z>0</z>
-                        <width>300</width>
-                        <height>70</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>
