@@ -244,7 +244,7 @@
                     <param id="1" name="Value">dt</param>
                 </action>
                 <action id="0" name="Set text" sid="2336110052538959" type="Timer">
-                    <param id="0" name="Text">&quot;Time : &quot; &amp; maxgametime - floor(timer % 60) &amp; &quot;s&quot;</param>
+                    <param id="0" name="Text">maxgametime - floor(timer % 60) &amp; &quot;s&quot;</param>
                 </action>
                 <action disabled="1" id="1" name="Append text" sid="6937321648087373" type="Timer">
                     <param id="0" name="Text">newline &amp; floor(timer / 3600) &amp; &quot;h &quot; &amp; floor(timer / 60 % 60) &amp; &quot;m &quot; &amp; floor(timer % 60) &amp; &quot;s&quot;</param>

@@ -74,16 +74,16 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="530724741074575" speed="5">
-                    <frame duration="1" hotspotX="0.506098" hotspotY="0.132394" original-source="C:\Users\Sean\Desktop\market lady.png">
+                <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="530724741074575" speed="5">
+                    <frame duration="1" hotspotX="0.504425" hotspotY="0.131343" original-source="C:\Users\Sean\Desktop\frame1.png">
                         <collision-poly>
-                            <point x="0.158537" y="0.0405474" />
-                            <point x="0.833854" y="0.0396536" />
+                            <point x="0.0169436" y="0.00895522" />
+                            <point x="0.982301" y="0.00681775" />
                             <point x="0.670683" y="0.323619" />
-                            <point x="0.694975" y="0.566928" />
-                            <point x="0.530488" y="0.967823" />
-                            <point x="0.341951" y="0.962703" />
-                            <point x="0.348195" y="0.55669" />
+                            <point x="0.827719" y="0.554987" />
+                            <point x="0.663231" y="0.961853" />
+                            <point x="0.377349" y="0.962703" />
+                            <point x="0.286248" y="0.547735" />
                             <point x="0.348293" y="0.34052" />
                         </collision-poly>
                     </frame>
@@ -252,7 +252,7 @@
         <object-type name="ButtonPlayAgain" sid="6749038360970392">
             <plugin id="Button" />
         </object-type>
-        <object-type name="ScoreLabel" sid="3271624416319572">
+        <object-type name="Text" sid="5398388421556743">
             <plugin id="Text" />
         </object-type>
     </object-folder>

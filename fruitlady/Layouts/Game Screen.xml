@@ -117,14 +117,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>562.33190918</x>
-                        <y>533.020324707</y>
+                        <x>600</x>
+                        <y>543</y>
                         <z>0</z>
-                        <width>137.143127441</width>
-                        <height>296.967102051</height>
+                        <width>94.49495697</width>
+                        <height>280.236572266</height>
                         <depth>0</depth>
-                        <hotspotX>0.506097555</hotspotX>
-                        <hotspotY>0.132394373</hotspotY>
+                        <hotspotX>0.504424751</hotspotX>
+                        <hotspotY>0.13134329</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -532,8 +532,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>40</x>
-                        <y>37</y>
+                        <x>226</x>
+                        <y>61</y>
                         <z>0</z>
                         <width>229</width>
                         <height>45</height>
@@ -549,33 +549,6 @@
                         <text>0</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-32,700,0</font>
-                        <color>255,255,255</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1245</x>
-                        <y>41</y>
-                        <z>0</z>
-                        <width>69</width>
-                        <height>49</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="ScoreLabel" uid="22">
-                    <properties>
-                        <text>Score : </text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-32,700,0</font>
                         <color>255,255,153</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -586,11 +559,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1120</x>
-                        <y>39</y>
+                        <x>1209</x>
+                        <y>62</y>
                         <z>0</z>
-                        <width>118</width>
-                        <height>45</height>
+                        <width>69</width>
+                        <height>49</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
