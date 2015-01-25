@@ -2,7 +2,7 @@
 <c2layout>
     <name>Main Menu</name>
     <sid>5865167040221817</sid>
-    <event-sheet>MainEvent</event-sheet>
+    <event-sheet>Main Events</event-sheet>
     <size>
         <width>1337</width>
         <height>800</height>
@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="TiledBackground2" uid="19">
+                <instance type="TiledBackgroundMenu" uid="19">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -49,7 +49,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Button" uid="0">
+                <instance type="ButtonPlay" uid="0">
                     <properties>
                         <type>Button</type>
                         <text>PLAY</text>

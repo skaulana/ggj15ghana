@@ -205,7 +205,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type global="1" name="TiledBackground" sid="9461927060753909">
+        <object-type global="1" name="TiledBackgroundGame" sid="9461927060753909">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\Dareal_Audax\Pictures\fruitfall\menu bg.png" />
         </object-type>
@@ -225,11 +225,11 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TiledBackground2" sid="3090290395506829">
+        <object-type name="TiledBackgroundMenu" sid="3090290395506829">
             <plugin id="TiledBg" />
             <texture original-source="\\SWANZY-PC\Users\SWANZY\Desktop\fruitfall\main TITLE menu w lady.png" />
         </object-type>
-        <object-type name="Button" sid="4347629791804993">
+        <object-type name="ButtonPlay" sid="4347629791804993">
             <plugin id="Button" />
         </object-type>
         <object-type name="Timer" sid="2110600482147019">
@@ -240,14 +240,14 @@
                 </behavior-type>
             </behaviors>
         </object-type>
-        <object-type name="TiledBackground3" sid="1626495284773712">
+        <object-type name="TiledBackgroundScore" sid="1626495284773712">
             <plugin id="TiledBg" />
             <texture original-source="\\SWANZY-PC\Users\SWANZY\Desktop\fruitfall\TIME UP SCREEN.png" />
         </object-type>
         <object-type name="EndText" sid="4909915734251747">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Button2" sid="6749038360970392">
+        <object-type name="ButtonPlayAgain" sid="6749038360970392">
             <plugin id="Button" />
         </object-type>
         <object-type name="ScoreLabel" sid="3271624416319572">
@@ -258,12 +258,12 @@
     <layout-folder>
         <layout>Main Menu.xml</layout>
         <layout>Game Screen.xml</layout>
-        <layout>Layout 1.xml</layout>
+        <layout>Score Screen.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Game Events.xml</event-sheet>
-        <event-sheet>MainEvent.xml</event-sheet>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Main Events.xml</event-sheet>
+        <event-sheet>Score Events.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="3" />
