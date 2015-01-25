@@ -57,9 +57,9 @@
                 <action id="-9" name="Destroy" sid="9961862676539974" type="banana" />
             </actions>
         </event-block>
-        <event-block sid="5228874295402868">
+        <event-block disabled="1" sid="5228874295402868">
             <conditions>
-                <condition id="-2" name="Compare Y" sid="4081099453000757" type="banana">
+                <condition disabled="1" id="-2" name="Compare Y" sid="4081099453000757" type="banana">
                     <param id="0" name="Comparison">4</param>
                     <param id="1" name="Y co-ordinate">banana.Height + FruitLady.Y</param>
                 </condition>
@@ -239,7 +239,7 @@
         <event-block sid="2556605179358154">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="5709620545387894" type="System">
-                    <param id="0" name="Interval (seconds)">33</param>
+                    <param id="0" name="Interval (seconds)">31</param>
                 </condition>
             </conditions>
             <actions>

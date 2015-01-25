@@ -242,7 +242,7 @@
         </object-type>
         <object-type name="TiledBackground3" sid="1626495284773712">
             <plugin id="TiledBg" />
-            <texture original-source="\\SWANZY-PC\Users\SWANZY\Desktop\fruitfall\main menu w lady.png" />
+            <texture original-source="\\SWANZY-PC\Users\SWANZY\Desktop\fruitfall\TIME UP SCREEN.png" />
         </object-type>
         <object-type name="EndText" sid="4909915734251747">
             <plugin id="Text" />
