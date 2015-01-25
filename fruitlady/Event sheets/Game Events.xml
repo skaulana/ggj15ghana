@@ -3,8 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Game Events</name>
     <events>
+        <variable constant="1" name="BASKETHEIGHT" sid="4276860445043912" static="0" type="number">505</variable>
         <variable constant="0" name="maxgametime" sid="1006662764698135" static="0" type="number">30</variable>
-        <variable constant="1" name="BASKETHEIGHT" sid="4276860445043912" static="0" type="number">540</variable>
         <variable constant="0" name="timer" sid="1239212921494726" static="0" type="number">0</variable>
         <event-block sid="5611668508548931">
             <conditions>
@@ -262,6 +262,30 @@
             <actions>
                 <action id="-2" name="Go to layout" sid="7048621050065059" type="System">
                     <param id="0" name="Layout">Score Screen</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2759249170339625">
+            <conditions>
+                <condition id="4" name="On key code pressed" sid="4242088608797209" type="Keyboard">
+                    <param id="0" name="Keycode">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="8852942426871463" type="FruitLady">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1240173688716318">
+            <conditions>
+                <condition id="4" name="On key code pressed" sid="9888354045684426" type="Keyboard">
+                    <param id="0" name="Keycode">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="273498701031998" type="FruitLady">
+                    <param id="0" name="State">1</param>
                 </action>
             </actions>
         </event-block>

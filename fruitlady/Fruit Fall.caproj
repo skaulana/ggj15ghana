@@ -75,17 +75,16 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="530724741074575" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="-0.0084507" original-source="C:\Users\Sean\Desktop\market lady.png">
-                        <image-point name="Imagepoint 1" x="0.481707" y="0.160563" />
+                    <frame duration="1" hotspotX="0.506098" hotspotY="0.132394" original-source="C:\Users\Sean\Desktop\market lady.png">
                         <collision-poly>
-                            <point x="0.185024" y="0.0433644" />
-                            <point x="0.864341" y="0.0424705" />
-                            <point x="0.780439" y="0.25883" />
-                            <point x="0.719366" y="0.54721" />
-                            <point x="0.554878" y="0.967823" />
-                            <point x="0.390732" y="0.959886" />
-                            <point x="0.378683" y="0.539788" />
-                            <point x="0.226342" y="0.22221" />
+                            <point x="0.158537" y="0.0405474" />
+                            <point x="0.833854" y="0.0396536" />
+                            <point x="0.670683" y="0.323619" />
+                            <point x="0.694975" y="0.566928" />
+                            <point x="0.530488" y="0.967823" />
+                            <point x="0.341951" y="0.962703" />
+                            <point x="0.348195" y="0.55669" />
+                            <point x="0.348293" y="0.34052" />
                         </collision-poly>
                     </frame>
                 </animation>
