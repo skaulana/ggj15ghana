@@ -4,8 +4,8 @@
     <sid>5865167040221817</sid>
     <event-sheet>MainEvent</event-sheet>
     <size>
-        <width>1000</width>
-        <height>600</height>
+        <width>1337</width>
+        <height>800</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -37,11 +37,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>0</x>
-                        <y>-1</y>
+                        <x>1</x>
+                        <y>1</y>
                         <z>0</z>
-                        <width>1000</width>
-                        <height>600</height>
+                        <width>1337</width>
+                        <height>800</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -63,8 +63,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>383</x>
-                        <y>72</y>
+                        <x>514</x>
+                        <y>242</y>
                         <z>0</z>
                         <width>253</width>
                         <height>77</height>

@@ -11,6 +11,10 @@
                 <action id="0" name="Set text" sid="3289494000317928" type="EndText">
                     <param id="0" name="Text">&quot;Your score is  &quot; &amp; FruitLady.Score</param>
                 </action>
+                <action id="-10" name="Add to" sid="2942897689439669" type="System">
+                    <param id="0" name="Variable">leveler</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="2398411473930422">

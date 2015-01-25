@@ -21,15 +21,15 @@
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
-        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="wrap" version="1">Wrap</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>1000</width>
-        <height>600</height>
+        <width>1337</width>
+        <height>800</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -51,7 +51,7 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="MenuText" sid="3349437866397053">
+        <object-type name="Score" sid="3349437866397053">
             <plugin id="Text" />
         </object-type>
         <object-type name="Keyboard" sid="7929943826469668">
@@ -68,6 +68,9 @@
                 </behavior-type>
                 <behavior-type name="Pin" sid="8234942023765576">
                     <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Wrap" sid="2185471458591083">
+                    <behavior id="wrap" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -202,18 +205,18 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TiledBackground" sid="9461927060753909">
+        <object-type global="1" name="TiledBackground" sid="9461927060753909">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\Dareal_Audax\Pictures\fruitfall\menu bg.png" />
         </object-type>
-        <object-type name="Sprite" sid="4967143599705354">
+        <object-type global="1" name="Sprite" sid="4967143599705354">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="8Direction" sid="5666005756674114">
                     <behavior id="EightDir" />
                 </behavior-type>
-                <behavior-type name="BoundToLayout" sid="7927619661917063">
-                    <behavior id="bound" />
+                <behavior-type name="Wrap" sid="387746551147649">
+                    <behavior id="wrap" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -224,7 +227,7 @@
         </object-type>
         <object-type name="TiledBackground2" sid="3090290395506829">
             <plugin id="TiledBg" />
-            <texture original-source="C:\Users\Dareal_Audax\Pictures\fruitfall\main menu w lady.png" />
+            <texture original-source="\\SWANZY-PC\Users\SWANZY\Desktop\fruitfall\main TITLE menu w lady.png" />
         </object-type>
         <object-type name="Button" sid="4347629791804993">
             <plugin id="Button" />
@@ -239,13 +242,16 @@
         </object-type>
         <object-type name="TiledBackground3" sid="1626495284773712">
             <plugin id="TiledBg" />
-            <texture original-source="C:\Users\Dareal_Audax\Pictures\fruitfall\menu bg.png" />
+            <texture original-source="\\SWANZY-PC\Users\SWANZY\Desktop\fruitfall\main menu w lady.png" />
         </object-type>
         <object-type name="EndText" sid="4909915734251747">
             <plugin id="Text" />
         </object-type>
         <object-type name="Button2" sid="6749038360970392">
             <plugin id="Button" />
+        </object-type>
+        <object-type name="ScoreLabel" sid="3271624416319572">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />

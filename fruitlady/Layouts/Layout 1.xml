@@ -5,7 +5,7 @@
     <event-sheet>Event sheet 1</event-sheet>
     <size>
         <width>1366</width>
-        <height>768</height>
+        <height>800</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -37,11 +37,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>0</x>
-                        <y>0</y>
+                        <x>1</x>
+                        <y>1</y>
                         <z>0</z>
                         <width>1366</width>
-                        <height>768</height>
+                        <height>800</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -54,8 +54,8 @@
                         <text>TEXT GOES HERE</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-48,700,1</font>
-                        <color>255,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
@@ -67,8 +67,8 @@
                         <x>375</x>
                         <y>196</y>
                         <z>0</z>
-                        <width>745</width>
-                        <height>293</height>
+                        <width>646</width>
+                        <height>84</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -90,8 +90,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>535</x>
-                        <y>393</y>
+                        <x>500</x>
+                        <y>498</y>
                         <z>0</z>
                         <width>287</width>
                         <height>72</height>

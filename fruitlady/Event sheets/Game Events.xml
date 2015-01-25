@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Game Events</name>
     <events>
+        <variable constant="0" name="leveler" sid="7067013932493755" static="0" type="number">0</variable>
         <variable constant="0" name="scores" sid="4032171439040061" static="0" type="number">0</variable>
         <variable constant="0" name="timer" sid="1239212921494726" static="0" type="number">0</variable>
         <event-block sid="5611668508548931">
@@ -10,6 +11,10 @@
                 <condition id="-2" name="On start of layout" sid="7264408470050787" type="System" />
             </conditions>
             <actions>
+                <action id="-9" name="Set value" sid="3636465753291705" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Value">0</param>
+                </action>
                 <action id="-10" name="Set value" sid="6803994496420495" type="FruitLady">
                     <param id="0" name="Instance variable">Score</param>
                     <param id="1" name="Value">0</param>
@@ -46,7 +51,7 @@
                     <param id="0" name="Instance variable">Score</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action id="0" name="Set text" sid="9032715949095739" type="MenuText">
+                <action id="0" name="Set text" sid="9032715949095739" type="Score">
                     <param id="0" name="Text">FruitLady.Score</param>
                 </action>
                 <action id="-9" name="Destroy" sid="9961862676539974" type="banana" />
@@ -79,7 +84,7 @@
                     <param id="0" name="Instance variable">Score</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action id="0" name="Set text" sid="1385605835749835" type="MenuText">
+                <action id="0" name="Set text" sid="1385605835749835" type="Score">
                     <param id="0" name="Text">FruitLady.Score</param>
                 </action>
                 <action id="-9" name="Destroy" sid="5286981387738271" type="mangoes" />
@@ -94,9 +99,9 @@
             <actions>
                 <action id="-11" name="Add to" sid="8751763294521626" type="FruitLady">
                     <param id="0" name="Instance variable">Score</param>
-                    <param id="1" name="Value">1</param>
+                    <param id="1" name="Value">2</param>
                 </action>
-                <action id="0" name="Set text" sid="7853578164323693" type="MenuText">
+                <action id="0" name="Set text" sid="7853578164323693" type="Score">
                     <param id="0" name="Text">FruitLady.Score</param>
                 </action>
                 <action id="-9" name="Destroy" sid="8450314017797048" type="melons" />
@@ -113,7 +118,7 @@
                     <param id="0" name="Instance variable">Score</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action id="0" name="Set text" sid="7508701967239609" type="MenuText">
+                <action id="0" name="Set text" sid="7508701967239609" type="Score">
                     <param id="0" name="Text">FruitLady.Score</param>
                 </action>
                 <action id="-9" name="Destroy" sid="395546342652844" type="orange" />
@@ -130,7 +135,7 @@
                     <param id="0" name="Instance variable">Score</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action id="0" name="Set text" sid="4291043919185389" type="MenuText">
+                <action id="0" name="Set text" sid="4291043919185389" type="Score">
                     <param id="0" name="Text">FruitLady.Score</param>
                 </action>
                 <action id="-9" name="Destroy" sid="9943333195416777" type="pineapple" />
@@ -224,9 +229,9 @@
                     <param id="1" name="Value">dt</param>
                 </action>
                 <action id="0" name="Set text" sid="2336110052538959" type="Timer">
-                    <param id="0" name="Text">timer</param>
+                    <param id="0" name="Text">&quot;Time : &quot; &amp; floor(timer % 60) &amp; &quot;s&quot;</param>
                 </action>
-                <action id="1" name="Append text" sid="6937321648087373" type="Timer">
+                <action disabled="1" id="1" name="Append text" sid="6937321648087373" type="Timer">
                     <param id="0" name="Text">newline &amp; floor(timer / 3600) &amp; &quot;h &quot; &amp; floor(timer / 60 % 60) &amp; &quot;m &quot; &amp; floor(timer % 60) &amp; &quot;s&quot;</param>
                 </action>
             </actions>
@@ -241,17 +246,18 @@
                 <action id="-2" name="Go to layout" sid="7048621050065059" type="System">
                     <param id="0" name="Layout">Layout 1</param>
                 </action>
-                <action id="-43" name="Go to next/previous layout" sid="4200648124665688" type="System">
-                    <param id="0" name="Which">0</param>
-                </action>
             </actions>
         </event-block>
-        <event-block sid="6886443484093214">
+        <event-block disabled="1" sid="9644937389917785">
             <conditions>
-                <condition id="-3" name="On end of layout" sid="675438721202157" type="System" />
+                <condition id="-14" name="Compare variable" sid="1437242892284003" type="System">
+                    <param id="0" name="Variable">leveler</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="-26" name="Restart layout" sid="2445002985048199" type="System" />
+                <action id="-26" name="Restart layout" sid="3018525602786495" type="System" />
             </actions>
         </event-block>
     </events>
