@@ -10,23 +10,26 @@
     <unique-id>16w6dmkzza8es</unique-id>
     <saved-with-version>19500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
-        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
-        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
+        <behavior author="Scirra" id="wrap" version="1">Wrap</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>1000</width>
-        <height>600</height>
+        <width>1337</width>
+        <height>800</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -43,25 +46,31 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D web</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview browser">Chrome</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="MenuText" sid="3349437866397053">
+        <object-type name="Score" sid="3349437866397053">
             <plugin id="Text" />
         </object-type>
         <object-type name="Keyboard" sid="7929943826469668">
             <plugin id="Keyboard" />
         </object-type>
-        <object-type name="FruitLady" sid="5972412223187127">
+        <object-type global="1" name="FruitLady" sid="5972412223187127">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Score" sid="6600741390155714" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Movement" sid="9323815790951675">
                     <behavior id="EightDir" />
                 </behavior-type>
-                <behavior-type name="BoundToLayout" sid="122676969047125">
-                    <behavior id="bound" />
+                <behavior-type name="Pin" sid="8234942023765576">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Wrap" sid="2185471458591083">
+                    <behavior id="wrap" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -69,38 +78,34 @@
                     <frame duration="1" hotspotX="0" hotspotY="-0.00769231" original-source="C:\Users\SWANZY\Desktop\ec sprites\market woman\market woman.png">
                         <image-point name="Imagepoint 1" x="0.48" y="0.161538" />
                         <collision-poly>
-                            <point x="0.331245" y="0.674721" />
-                            <point x="0.402" y="0.848201" />
-                            <point x="0.579637" y="0.850062" />
-                            <point x="0.627991" y="0.673077" />
-                            <point x="0.635596" y="0.346495" />
-                            <point x="0.716" y="0.165199" />
-                            <point x="0.251843" y="0.160638" />
-                            <point x="0.328896" y="0.338462" />
+                            <point x="0.455245" y="0.643952" />
+                            <point x="0.5" y="0.244355" />
+                            <point x="0.533637" y="0.659677" />
+                            <point x="0.503991" y="0.5" />
+                            <point x="0.551596" y="0.365726" />
+                            <point x="0.5" y="0.570968" />
+                            <point x="0.443843" y="0.372177" />
+                            <point x="0.482896" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TestFruit" sid="1382777069100891">
+        <object-type name="banana" sid="1382777069100891">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Physics" sid="6312796796407181">
-                    <behavior id="Physics" />
+                <behavior-type name="Bullet" sid="140414179202088">
+                    <behavior id="Bullet" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7488149196339744" speed="5">
-                    <frame duration="1" hotspotX="0.504854" hotspotY="0.710438" original-source="C:\Users\SWANZY\Desktop\ec sprites\fruts\sprites\bananas1png.png">
+                    <frame duration="1" hotspotX="0.501618" hotspotY="0.501683" original-source="C:\Users\SWANZY\Desktop\ec sprites\fruts\sprites\bananas1png.png">
                         <collision-poly>
-                            <point x="0.297735" y="0.286195" />
-                            <point x="0.368932" y="0.276094" />
-                            <point x="0.601942" y="0.363636" />
-                            <point x="0.877023" y="0.37037" />
-                            <point x="0.831715" y="0.548821" />
-                            <point x="0.66343" y="0.703704" />
-                            <point x="0.398058" y="0.700337" />
-                            <point x="0.242718" y="0.50505" />
+                            <point x="0.499775" y="0.454382" />
+                            <point x="0.533093" y="0.5" />
+                            <point x="0.499775" y="0.519808" />
+                            <point x="0.470059" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -108,6 +113,11 @@
         </object-type>
         <object-type name="orange" sid="229394261778649">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="2532860294180169">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8658739397273421" speed="5">
                     <frame duration="1" hotspotX="0.509804" hotspotY="0.514286" original-source="C:\Users\SWANZY\Desktop\ec sprites\fruts\sprites\orange-4png.png">
@@ -126,6 +136,11 @@
         </object-type>
         <object-type name="pineapple" sid="2862082556477602">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="2196491430809861">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9888310048568779" speed="5">
                     <frame duration="1" hotspotX="0.503817" hotspotY="0.504065" original-source="C:\Users\SWANZY\Desktop\ec sprites\fruts\sprites\pineapplepng.png">
@@ -145,6 +160,11 @@
         </object-type>
         <object-type name="melons" sid="3132501896607769">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="3986498275502557">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9819192407182607" speed="5">
                     <frame duration="1" hotspotX="0.505747" hotspotY="0.504762" original-source="C:\Users\SWANZY\Desktop\ec sprites\fruts\sprites\ttar_watermelon_01_v_launchpng.png">
@@ -164,6 +184,11 @@
         </object-type>
         <object-type name="mangoes" sid="5446130185234979">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="1911554816999865">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4505018676255164" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SWANZY\Desktop\ec sprites\fruts\sprites\yellow-mangopng.png">
@@ -180,19 +205,65 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="GameBackground" sid="9230316246057913">
+        <object-type global="1" name="TiledBackground" sid="9461927060753909">
             <plugin id="TiledBg" />
-            <texture />
+            <texture original-source="C:\Users\Dareal_Audax\Pictures\fruitfall\menu bg.png" />
+        </object-type>
+        <object-type global="1" name="Sprite" sid="4967143599705354">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="5666005756674114">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="Wrap" sid="387746551147649">
+                    <behavior id="wrap" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8859833980616609" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground2" sid="3090290395506829">
+            <plugin id="TiledBg" />
+            <texture original-source="\\SWANZY-PC\Users\SWANZY\Desktop\fruitfall\main TITLE menu w lady.png" />
+        </object-type>
+        <object-type name="Button" sid="4347629791804993">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Timer" sid="2110600482147019">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Timer" sid="2430406381521422">
+                    <behavior id="Timer" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="TiledBackground3" sid="1626495284773712">
+            <plugin id="TiledBg" />
+            <texture original-source="\\SWANZY-PC\Users\SWANZY\Desktop\fruitfall\TIME UP SCREEN.png" />
+        </object-type>
+        <object-type name="EndText" sid="4909915734251747">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Button2" sid="6749038360970392">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="ScoreLabel" sid="3271624416319572">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Main Menu.xml</layout>
         <layout>Game Screen.xml</layout>
+        <layout>Layout 1.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Main Menu Events.xml</event-sheet>
         <event-sheet>Game Events.xml</event-sheet>
+        <event-sheet>MainEvent.xml</event-sheet>
+        <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="3" />

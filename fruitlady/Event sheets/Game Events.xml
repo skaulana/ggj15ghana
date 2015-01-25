@@ -3,51 +3,262 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Game Events</name>
     <events>
+        <variable constant="0" name="leveler" sid="7067013932493755" static="0" type="number">0</variable>
+        <variable constant="0" name="scores" sid="4032171439040061" static="0" type="number">0</variable>
+        <variable constant="0" name="timer" sid="1239212921494726" static="0" type="number">0</variable>
         <event-block sid="5611668508548931">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="7264408470050787" type="System" />
             </conditions>
             <actions>
-                <action id="-16" name="Wait" sid="7839491075234854" type="System">
-                    <param id="0" name="Seconds">5</param>
+                <action id="-9" name="Set value" sid="3636465753291705" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Value">0</param>
                 </action>
-                <action id="-2" name="Go to layout" sid="4725707489724976" type="System">
-                    <param id="0" name="Layout">Main Menu</param>
+                <action id="-10" name="Set value" sid="6803994496420495" type="FruitLady">
+                    <param id="0" name="Instance variable">Score</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action behavior="Bullet" id="2" name="Set gravity" sid="8602934858989378" type="banana">
+                    <param id="0" name="Gravity">random(9,90)</param>
+                </action>
+                <action behavior="Bullet" id="2" name="Set gravity" sid="8208026865623776" type="mangoes">
+                    <param id="0" name="Gravity">random(20,90)</param>
+                </action>
+                <action behavior="Bullet" id="2" name="Set gravity" sid="7533025591150906" type="melons">
+                    <param id="0" name="Gravity">random(20,90)</param>
+                </action>
+                <action behavior="Bullet" id="2" name="Set gravity" sid="2672708595836087" type="orange">
+                    <param id="0" name="Gravity">random(20,90)</param>
+                </action>
+                <action behavior="Bullet" id="2" name="Set gravity" sid="4726294940821705" type="pineapple">
+                    <param id="0" name="Gravity">random(20,90)</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="5440172679892732" type="FruitLady">
+                    <param id="0" name="Pin to">Sprite</param>
+                    <param id="1" name="Mode">0</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="3226621946390864">
+        <event-block any="1" sid="3417748315806827">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="5191569958185716" type="TestFruit">
-                    <param id="0" name="Object">FruitLady</param>
+                <condition id="0" name="On collision with another object" sid="3830814190679852" type="banana">
+                    <param id="0" name="Object">Sprite</param>
                 </condition>
             </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="5191348108566341">
-                    <conditions>
-                        <condition id="-2" name="Compare Y" sid="4649513663487132" type="TestFruit">
-                            <param id="0" name="Comparison">4</param>
-                            <param id="1" name="Y co-ordinate">450</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Physics" id="2" name="Apply force at angle" sid="2697652796070184" type="TestFruit">
-                            <param id="0" name="Force">200</param>
-                            <param id="1" name="Angle">TestFruit.X &gt; (FruitLady.X + (FruitLady.Width / 2)) ? 0 : 180</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="3485601790089556">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="4812786881083381" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="158340705074274" type="TestFruit" />
-                    </actions>
-                </event-block>
-            </sub-events>
+            <actions>
+                <action id="-11" name="Add to" sid="4356761728704053" type="FruitLady">
+                    <param id="0" name="Instance variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="9032715949095739" type="Score">
+                    <param id="0" name="Text">FruitLady.Score</param>
+                </action>
+                <action id="-9" name="Destroy" sid="9961862676539974" type="banana" />
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="5228874295402868">
+            <conditions>
+                <condition disabled="1" id="-2" name="Compare Y" sid="4081099453000757" type="banana">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">banana.Height + FruitLady.Y</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="4" name="Bounce off object" sid="1278405139004378" type="banana">
+                    <param id="0" name="Object">banana</param>
+                </action>
+                <action behavior="Bullet" id="2" name="Set gravity" sid="5581932541432087" type="banana">
+                    <param id="0" name="Gravity">-90</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7817465638390704">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7891982473611514" type="mangoes">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="9337459288351142" type="FruitLady">
+                    <param id="0" name="Instance variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="1385605835749835" type="Score">
+                    <param id="0" name="Text">FruitLady.Score</param>
+                </action>
+                <action id="-9" name="Destroy" sid="5286981387738271" type="mangoes" />
+            </actions>
+        </event-block>
+        <event-block sid="3755317131866348">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8371660655746493" type="melons">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="8751763294521626" type="FruitLady">
+                    <param id="0" name="Instance variable">Score</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="0" name="Set text" sid="7853578164323693" type="Score">
+                    <param id="0" name="Text">FruitLady.Score</param>
+                </action>
+                <action id="-9" name="Destroy" sid="8450314017797048" type="melons" />
+            </actions>
+        </event-block>
+        <event-block sid="9133140420600174">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9437997548003585" type="orange">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="3353165362482451" type="FruitLady">
+                    <param id="0" name="Instance variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="7508701967239609" type="Score">
+                    <param id="0" name="Text">FruitLady.Score</param>
+                </action>
+                <action id="-9" name="Destroy" sid="395546342652844" type="orange" />
+            </actions>
+        </event-block>
+        <event-block sid="4857270122312998">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1948043945742476" type="pineapple">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="2422403087590958" type="FruitLady">
+                    <param id="0" name="Instance variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="4291043919185389" type="Score">
+                    <param id="0" name="Text">FruitLady.Score</param>
+                </action>
+                <action id="-9" name="Destroy" sid="9943333195416777" type="pineapple" />
+            </actions>
+        </event-block>
+        <event-block sid="1872310207238408">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="211233191005459" type="System">
+                    <param id="0" name="Interval (seconds)">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="3353845805804865" type="System">
+                    <param id="0" name="Object to create">melons</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">random(1,900)</param>
+                    <param id="3" name="Y">random(-1,-100)</param>
+                </action>
+                <action id="-3" name="Create object" sid="9999228299167161" type="System">
+                    <param id="0" name="Object to create">banana</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">random(1,900)</param>
+                    <param id="3" name="Y">random(-1,-100)</param>
+                </action>
+                <action behavior="Bullet" id="2" name="Set gravity" sid="8432425453140312" type="banana">
+                    <param id="0" name="Gravity">random(9,90)</param>
+                </action>
+                <action behavior="Bullet" id="2" name="Set gravity" sid="6231073103045586" type="mangoes">
+                    <param id="0" name="Gravity">random(20,90)</param>
+                </action>
+                <action behavior="Bullet" id="2" name="Set gravity" sid="8709565813908572" type="melons">
+                    <param id="0" name="Gravity">random(20,90)</param>
+                </action>
+                <action behavior="Bullet" id="2" name="Set gravity" sid="3220592477669717" type="orange">
+                    <param id="0" name="Gravity">random(20,90)</param>
+                </action>
+                <action behavior="Bullet" id="2" name="Set gravity" sid="4422256184439804" type="pineapple">
+                    <param id="0" name="Gravity">random(20,90)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8747941022581913">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="8870263144829591" type="System">
+                    <param id="0" name="Interval (seconds)">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="5040076479899174" type="System">
+                    <param id="0" name="Object to create">mangoes</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">random(1,900)</param>
+                    <param id="3" name="Y">random(-1,-900)</param>
+                </action>
+                <action id="-3" name="Create object" sid="1988398113052408" type="System">
+                    <param id="0" name="Object to create">orange</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">random(1,900)</param>
+                    <param id="3" name="Y">random(-1,-900)</param>
+                </action>
+                <action id="-3" name="Create object" sid="8609722230980701" type="System">
+                    <param id="0" name="Object to create">pineapple</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">random(1,900)</param>
+                    <param id="3" name="Y">random(-1,-900)</param>
+                </action>
+                <action behavior="Bullet" id="2" name="Set gravity" sid="5457795475734484" type="banana">
+                    <param id="0" name="Gravity">random(9,90)</param>
+                </action>
+                <action behavior="Bullet" id="2" name="Set gravity" sid="8496258094198504" type="mangoes">
+                    <param id="0" name="Gravity">random(20,90)</param>
+                </action>
+                <action behavior="Bullet" id="2" name="Set gravity" sid="9266412171424705" type="melons">
+                    <param id="0" name="Gravity">random(20,90)</param>
+                </action>
+                <action behavior="Bullet" id="2" name="Set gravity" sid="2279319651872006" type="orange">
+                    <param id="0" name="Gravity">random(20,90)</param>
+                </action>
+                <action behavior="Bullet" id="2" name="Set gravity" sid="1669922121215953" type="pineapple">
+                    <param id="0" name="Gravity">random(20,90)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6313459315614231">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="6414556651655445" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="8896865373647218" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Value">dt</param>
+                </action>
+                <action id="0" name="Set text" sid="2336110052538959" type="Timer">
+                    <param id="0" name="Text">&quot;Time : &quot; &amp; floor(timer % 60) &amp; &quot;s&quot;</param>
+                </action>
+                <action disabled="1" id="1" name="Append text" sid="6937321648087373" type="Timer">
+                    <param id="0" name="Text">newline &amp; floor(timer / 3600) &amp; &quot;h &quot; &amp; floor(timer / 60 % 60) &amp; &quot;m &quot; &amp; floor(timer % 60) &amp; &quot;s&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2556605179358154">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="5709620545387894" type="System">
+                    <param id="0" name="Interval (seconds)">31</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7048621050065059" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="9644937389917785">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="1437242892284003" type="System">
+                    <param id="0" name="Variable">leveler</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="3018525602786495" type="System" />
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
