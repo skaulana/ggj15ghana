@@ -3,8 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Game Events</name>
     <events>
-        <variable constant="0" name="leveler" sid="7067013932493755" static="0" type="number">0</variable>
-        <variable constant="0" name="scores" sid="4032171439040061" static="0" type="number">0</variable>
+        <variable constant="0" name="maxgametime" sid="1006662764698135" static="0" type="number">30</variable>
         <variable constant="0" name="timer" sid="1239212921494726" static="0" type="number">0</variable>
         <event-block sid="5611668508548931">
             <conditions>
@@ -234,26 +233,16 @@
         </event-block>
         <event-block sid="2556605179358154">
             <conditions>
-                <condition id="-6" name="Every X seconds" sid="5709620545387894" type="System">
-                    <param id="0" name="Interval (seconds)">31</param>
+                <condition id="-8" name="Compare two values" sid="5709620545387894" type="System">
+                    <param id="0" name="First value">floor(timer % 60)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">maxgametime</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="7048621050065059" type="System">
                     <param id="0" name="Layout">Score Screen</param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block disabled="1" sid="9644937389917785">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="1437242892284003" type="System">
-                    <param id="0" name="Variable">leveler</param>
-                    <param id="1" name="Comparison">1</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-26" name="Restart layout" sid="3018525602786495" type="System" />
             </actions>
         </event-block>
     </events>
