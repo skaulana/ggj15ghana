@@ -34,16 +34,12 @@
                 <action behavior="Bullet" id="2" name="Set gravity" sid="4726294940821705" type="pineapple">
                     <param id="0" name="Gravity">random(20,90)</param>
                 </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="5440172679892732" type="FruitLady">
-                    <param id="0" name="Pin to">Sprite</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
             </actions>
         </event-block>
         <event-block any="1" sid="3417748315806827">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="3830814190679852" type="banana">
-                    <param id="0" name="Object">Sprite</param>
+                    <param id="0" name="Object">FruitLady</param>
                 </condition>
             </conditions>
             <actions>
@@ -76,7 +72,7 @@
         <event-block sid="7817465638390704">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="7891982473611514" type="mangoes">
-                    <param id="0" name="Object">Sprite</param>
+                    <param id="0" name="Object">FruitLady</param>
                 </condition>
             </conditions>
             <actions>
@@ -93,7 +89,7 @@
         <event-block sid="3755317131866348">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="8371660655746493" type="melons">
-                    <param id="0" name="Object">Sprite</param>
+                    <param id="0" name="Object">FruitLady</param>
                 </condition>
             </conditions>
             <actions>
@@ -110,7 +106,7 @@
         <event-block sid="9133140420600174">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="9437997548003585" type="orange">
-                    <param id="0" name="Object">Sprite</param>
+                    <param id="0" name="Object">FruitLady</param>
                 </condition>
             </conditions>
             <actions>
@@ -127,7 +123,7 @@
         <event-block sid="4857270122312998">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="1948043945742476" type="pineapple">
-                    <param id="0" name="Object">Sprite</param>
+                    <param id="0" name="Object">FruitLady</param>
                 </condition>
             </conditions>
             <actions>
