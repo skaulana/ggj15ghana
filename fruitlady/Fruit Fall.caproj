@@ -255,6 +255,25 @@
         <object-type name="Text" sid="5398388421556743">
             <plugin id="Text" />
         </object-type>
+        <object-type name="jamlogo" sid="1125134786803696">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8769758145664331" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501577" original-source="C:\Users\Sean\Desktop\jam-logo.png">
+                        <collision-poly>
+                            <point x="0.144654" y="0.14511" />
+                            <point x="0.5" y="0" />
+                            <point x="0.855346" y="0.14511" />
+                            <point x="1" y="0.498423" />
+                            <point x="0.852201" y="0.851735" />
+                            <point x="0.5" y="1" />
+                            <point x="0.147799" y="0.851735" />
+                            <point x="0" y="0.498423" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
