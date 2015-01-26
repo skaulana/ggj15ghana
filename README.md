@@ -1,4 +1,5 @@
-# ggj15ghana
-Global Game Jam 2015 Ghana
+# #ggj15 in Ghana
 
-http://globalgamejam.org/2015/jam-sites/gamenerdispace-global-game-jam-2015
+More info in the wiki - https://github.com/skaulana/ggj15ghana/wiki
+
+Official jam site - http://globalgamejam.org/2015/jam-sites/gamenerdispace-global-game-jam-2015
