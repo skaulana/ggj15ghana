@@ -13,9 +13,12 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="2398411473930422">
+        <event-block any="1" sid="2398411473930422">
             <conditions>
                 <condition id="0" name="On clicked" sid="7995628519706838" type="ButtonPlayAgain" />
+                <condition id="5" name="Key code is down" sid="9239223249152538" type="Keyboard">
+                    <param id="0" name="Keycode">32</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="6702495853272148" type="System">

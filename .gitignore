@@ -1,5 +1,5 @@
 # Construct 2 accessory files
 *.uistate.xml
-*.autosave
-*.backup1
-*.backup2
+*.capx.autosave
+*.capx.backup1
+*.capx.backup2

@@ -3,9 +3,12 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Main Events</name>
     <events>
-        <event-block sid="2500046654251753">
+        <event-block any="1" sid="2500046654251753">
             <conditions>
                 <condition id="0" name="On clicked" sid="4711255920381505" type="ButtonPlay" />
+                <condition id="5" name="Key code is down" sid="9799393563295564" type="Keyboard">
+                    <param id="0" name="Keycode">32</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="8472237097417099" type="System">
