@@ -289,5 +289,35 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="3868314427787973">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="579894633770578" type="Touch">
+                    <param id="0" name="Object">ArrowLeft</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Movement" id="7" name="Simulate control" sid="4002320341991604" type="FruitLady">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="2159725411590896" type="FruitLady">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1080569968074359">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="9320275272334816" type="Touch">
+                    <param id="0" name="Object">ArrowRight</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Movement" id="7" name="Simulate control" sid="9193371662923749" type="FruitLady">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="5483520313203068" type="FruitLady">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
